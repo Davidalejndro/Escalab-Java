@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "c4fe817b-86fb-4b42-97b7-e8c258903803",
+		"name": "Api-Rest-Usuarios",
+		"description": "api rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20987246"
+	},
+	"item": [
+		{
+			"name": "Mostrar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"david alejandro\",\n  \"correo\": \"davidalejandro.inf@gmail.com\",\n  \"clave\": \"ksjds\",\n  \"telefonos\": [\n    {\n      \"numero\": 343335233,\n      \"codigoCiudad\": 57,\n      \"codigoPais\": 56\n    },\n    {\n      \"numero\": 2453,\n      \"codigoCiudad\": 58,\n      \"codigoPais\": 56\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
